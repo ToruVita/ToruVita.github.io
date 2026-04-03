@@ -1,0 +1,63 @@
+/* リセットっぽい */
+body, h1, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ヘッダー全体 */
+#site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+/* 隠れる状態 */
+#site-header.hide {
+  transform: translateY(-100%);
+}
+
+/* ヒーロー部分 */
+.hero {
+  height: 300px;
+  background-image: url("header.jpg");
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgba(0,0,0,0.4);
+  background-blend-mode: darken;
+}
+
+/* タイトル */
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* ナビ */
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 本文がヘッダーに隠れないように */
+main {
+  margin-top: 300px;
+}
