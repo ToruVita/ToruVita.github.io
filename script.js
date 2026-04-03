@@ -14,3 +14,13 @@ window.addEventListener("scroll", () => {
 
   lastScroll = currentScroll;
 });
+function loadHTML(id, file) {
+  fetch(file)
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    })
+    .catch(err => {
+      console.error("Failed to load:", file, err);
+    });
+}
