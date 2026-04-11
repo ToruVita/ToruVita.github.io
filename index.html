@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Ore-sama Page</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pico Responsive</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="my.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-
-<header id="site-header">
-  <div class="hero">
-    <h1>ORE-SAMA SITE</h1>
+<body class="app">
+<header>
     <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <i data-lucide="grip"></i></li>
+        <h3>A</h3>
+        <i data-lucide="settings"></i>   
     </nav>
-  </div>
 </header>
-
-<main>
-  <section id="links"><section>
-  <section style="height:2000px;">
-    本文（スクロール確認用）
-  </section>
+<main styl="background-color:yellow">aaaa
 </main>
-
-<script src="script.js"></script>
-<script>
-  loadHTML("links", "links.html");
-</script>
+<footer>
+    <nav>
+        <li><a href="#"><i data-lucide="house">A</i></a></li>
+        <li><i data-lucide="search">A</i></li>
+    </nav>
+</footer>
 </body>
+<script>
+  lucide.createIcons();
+</script>
 </html>
